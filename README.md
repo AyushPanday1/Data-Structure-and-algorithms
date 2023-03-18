@@ -1,2 +1,2 @@
-# LeetCode_Solutions
-Here, I am sharing the leetcode solutions which I have solved in Javascript.
+# DSA
+Here, I am sharing some most commonly used algorithms which I have solved in Javascript.
