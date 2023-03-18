@@ -34,4 +34,4 @@ function slidingWindow(arr, k) {
 
 Output:
 console.log(slidingWindow(arr, k));
-//16
+//Ans:16
