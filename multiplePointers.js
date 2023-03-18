@@ -27,9 +27,50 @@ function pointer(arr, target) {
 
 
 Output:
-console.log(pointer(arr,target));
+console.log(pointer(arr, target));
 //[ 18, 9 ]
 
 
 //T(C)=0(nLogn);
 //S(C)=0(1)
+
+
+
+//Find a pair whose sum is closest to the target.
+
+Input:
+var Arr = [10, 22, 28, 29, 30, 40];
+
+const x = 53;
+let ans = []
+
+
+function closestSum(arr, x) {
+
+    let i = 0, j = arr.length - 1;
+
+    //For storing the indexes of elements.
+    let left = 0, right = 0;
+
+    //Maximum difference here
+    let maximum = Number.MAX_VALUE;
+
+    while (i < j) {
+        if (Math.abs(arr[i] + arr[j] - x) < maximum) {
+            left = i
+            right = j
+            maximum = Math.abs(arr[i] + arr[j] - x)
+
+        }
+        if (arr[i] + arr[j] > x) {
+            j--
+        } else i++;
+    }
+
+    //Storing the answer in resultant array.
+    ans.push(arr[left], arr[right])
+
+    return ans;
+}
+
+console.log(closestSum(Arr, x));
