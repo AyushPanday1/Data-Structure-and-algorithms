@@ -4,9 +4,7 @@
 
 
 Input:
-
 var array = [3, 8, 9, 1, 3, 0, 2, 5, 4];
-
 
 Solution:
 
