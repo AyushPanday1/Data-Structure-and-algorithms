@@ -1,4 +1,5 @@
 //It is used mostly to find an sub-array or sub-string with specific conditions.
+//Array, String, Sub Array, Sub String, Largest Sum, Maximum Sum, Minimum Sum
 
 Input:
 var arr = [1, 4, 2, 10, 2, 3, 1, 0];
