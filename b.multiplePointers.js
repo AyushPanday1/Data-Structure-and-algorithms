@@ -1,4 +1,5 @@
 // It can be used in case of nested loops to avoid complexity. 
+//T(C)=0(nLogn);  S(C)=0(1)
 
 Input:
 var arr = [1, 9, 10, 2, 11, 18, 44, 16];
@@ -30,10 +31,7 @@ Output:
 console.log(pointer(arr, target));
 //[ 18, 9 ]
 
-
-//T(C)=0(nLogn);
-//S(C)=0(1)
-
+/**========================================================== */
 
 
 //Find a pair whose sum is closest to the target.
@@ -74,3 +72,4 @@ function closestSum(arr, x) {
 }
 
 console.log(closestSum(Arr, x));
+//[ 22, 30 ]
