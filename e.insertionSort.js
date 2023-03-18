@@ -32,7 +32,7 @@ function insertionSort(arr) {
 
 
 OUTPUT:
+
 insertionSort(array);
 console.log(array);
-
 //[ 12, 14, 43, 56, 87, 89 ]
