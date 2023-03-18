@@ -16,10 +16,12 @@ function BubbleSort(arr) {
     while (!swap) {
         swap = true;
 
+        //Start with 1 cause we have to compare 0th index too.
         for (let i = 1; i < arr.length; i++) {
             if (arr[i - 1] > arr[i]) {
                 swap = false;
 
+                //If greater then swap it with smaller element.
                 let temp = arr[i - 1];
                 arr[i - 1] = arr[i];
                 arr[i] = temp;
