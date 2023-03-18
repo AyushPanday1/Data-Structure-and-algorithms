@@ -1,4 +1,5 @@
 // It can be used to count frequency of any element in array or string.
+//T(C)=0(n); S(C)=0(n)
 
 Input:
 arr = [2, 9, 4, 6, 11, 3, 2, 9, 4, 6, 6]
@@ -45,6 +46,3 @@ console.log(obj);
 //{ '2': 2, '3': 1, '4': 2, '6': 3, '9': 2, '11': 1 }
 
 
-
-//T(C)=0(n);
-//S(C)=0(n)
