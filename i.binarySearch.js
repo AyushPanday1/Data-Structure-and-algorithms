@@ -19,8 +19,8 @@ function binarySearch(arr, target, low, high) {
     if (arr[middle] == target) return middle;
 
     //Recursive case
-    else if (arr[middle] < target) return binarySearch(arr, target, middle + 1, high);
-    else return binarySearch(arr, target, low, middle - 1);
+    else if (arr[middle] < target) return binarySearch(arr, target, middle + 1, high);     //Target is greater so start from middle to last.
+    else return binarySearch(arr, target, low, middle - 1);                                //Target is smaller so start from begin to middle.
     
     }
 
