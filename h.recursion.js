@@ -17,7 +17,7 @@ function factorial(N) {
 
 OUTPUT:
 console.log(factorial(N));
-
+//120
 
 /**================================================== */
 
@@ -100,4 +100,4 @@ function Palidrome(str) {
 
 OUTPUT:
 console.log(Palidrome(str));
-//false;
+//true;
