@@ -5,7 +5,8 @@ Input:
 arr = [2, 9, 4, 6, 11, 3, 2, 9, 4, 6, 6]
 
 Solution:
-//Using Map.
+
+//Using Map
 
 var map = new Map();
 
