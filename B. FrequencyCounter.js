@@ -161,3 +161,27 @@ var singleNumber = function (nums) {
         }
     }
 }
+
+
+
+{/*LEETCODE 169: Majority Element */}
+
+Input:
+
+var nums = [2,2,1,1,1,2,2];
+
+var majorityElement = function (nums) {
+
+    let n = nums.length;
+
+    let freqCounter = {}
+    for (let i = 0; i < n; i++) {
+     freqCounter[nums[i]] = freqCounter[nums[i]] ? freqCounter[nums[i]] + 1 : 1
+    }
+ 
+    for(let key in freqCounter){
+        if(freqCounter[key]>parseInt(n/2)){
+            return key
+        }
+    }
+};
