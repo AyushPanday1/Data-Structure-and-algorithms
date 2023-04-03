@@ -1,5 +1,5 @@
-/*It can be used to count frequency of any element in array or string.
-T(C)=0(n); S(C)=0(n)*/
+/*It can be used to count frequency of any element in array or string.*/
+// T(C)=0(n); S(C)=0(n)*/
 
 Input:
 arr = [2, 9, 4, 6, 11, 3, 2, 9, 4, 6, 6]
@@ -74,8 +74,8 @@ OUTPUT:
 
 console.log(countfrequency(str));
 
-// /*Here total chracters are 26 in string and if we remove 4 letters of 'a', 
-// that is most frequent chracter so answer would be 22.*/
+/*Here total chracters are 26 in string and if we remove 4 letters of 'a', 
+that is most frequent chracter so answer would be 22.*/
 
 
 //==================================================================*
@@ -106,8 +106,7 @@ OUTPUT:
 console.log(uniqueCharacters(str));    //7
 
 
-
-// /*=================================================================== */
+/*=================================================================== */
 
 {/*LEETCODE.347= RETURN TOP K FREQUENT ELEMENTS FROM ARRAY. */ }
 
@@ -141,7 +140,7 @@ console.log(topKFrequent(nums, k));
 
 
 
-{/*LEETCODE 136: SINGLE NUMBER */}
+// {/*LEETCODE 136: SINGLE NUMBER */}
 
 INPUT:
 
@@ -185,3 +184,5 @@ var majorityElement = function (nums) {
         }
     }
 };
+
+
