@@ -74,11 +74,11 @@ OUTPUT:
 
 console.log(countfrequency(str));
 
-/*Here total chracters are 26 in string and if we remove 4 letters of 'a', 
-that is most frequent chracter so answer would be 22.*/
+// /*Here total chracters are 26 in string and if we remove 4 letters of 'a', 
+// that is most frequent chracter so answer would be 22.*/
 
 
-//===================================================================\\
+//==================================================================*
 
 
 {/*COUNT THE NUMBER OF UNIQUE CHARACTERS IN A AGIVEN STRING. */ }
@@ -107,9 +107,9 @@ console.log(uniqueCharacters(str));    //7
 
 
 
-/*=================================================================== */
+// /*=================================================================== */
 
-{/*LEETCODE.347= RETURN TOP K FREQUENT ELEMENTS FROM ARRAY. */} 
+{/*LEETCODE.347= RETURN TOP K FREQUENT ELEMENTS FROM ARRAY. */ }
 
 var nums = [1, 1, 1, 2, 2, 3], k = 2;
 
@@ -137,30 +137,27 @@ var topKFrequent = function (nums, k) {
 
 };
 
-console.log(topKFrequent(nums,k));
+console.log(topKFrequent(nums, k));
 
 
-//SECOND METHOD(WITHOUT SORTING)----------------------
 
-var topKFrequent = function(nums, k) {
+{/*LEETCODE 136: SINGLE NUMBER */}
 
-    const freqMap = new Map();
-    const bucket = [];
-    const result = [];
-    
-    for(let num of nums) {
-        freqMap.set(num, (freqMap.get(num) || 0) + 1);
+INPUT:
+
+nums = [2,2,1];
+
+var singleNumber = function (nums) {
+
+    let obj = {};
+
+    for (let i = 0; i < nums.length; i++) {
+        obj[nums[i]] = obj[nums[i]] ? obj[nums[i]] + 1 : 1
     }
-    
-    for(let [num, freq] of freqMap) {
-        bucket[freq] = (bucket[freq] || new Set()).add(num);
+
+    for(let key in obj){
+        if(obj[key]==1){
+            return key
+        }
     }
-    
-    console.log(bucket);
-    for(let i = bucket.length-1; i >=k; i--) {
-        if(bucket[i]) result.push(...bucket[i]);
-    }
-    return result;
 };
-
-console.log(topKFrequent(nums,k));   // [ 1, 2 ]
