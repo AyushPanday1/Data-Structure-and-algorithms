@@ -160,4 +160,4 @@ var singleNumber = function (nums) {
             return key
         }
     }
-};
+}
